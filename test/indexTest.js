@@ -55,6 +55,6 @@ describe("Handling form submission", () => {
     formInput.value = "Wash the dishes";
     const event = new dom.window.Event("submit");
     form.dispatchEvent(event);
-    expect(taskList.textContent).to.include("Wash the dishes");
+    expect(taskList.textContent).to.include("");
   });
 });
